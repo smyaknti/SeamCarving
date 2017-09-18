@@ -51,7 +51,7 @@ from skimage import color
 from skimage import io
 
 	
-myimage = color.rgb2gray(io.imread('input5.jpg'))
+myimage = color.rgb2gray(io.imread('input.jpg'))
 image = img_as_float(myimage)
 # Feel free to play around with the parameters to see how they impact the result
 cv = chan_vese(image, mu=0.25, lambda1=1, lambda2=1, tol=1e-3, max_iter=50,dt=0.5, init_level_set="checkerboard", extended_output=True)
